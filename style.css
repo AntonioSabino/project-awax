@@ -30,6 +30,7 @@ header {
   width: 80px;
   height: 80px;
   background-color: #B28756;
+  border-radius: 30px;
 }
 
 .menu {
@@ -63,3 +64,76 @@ header {
   font-weight: 700;
 }
 
+.banner {
+  height: calc(100vh - 100px);
+  background-color: #333;
+  background-image: url(images/bg.jpg);
+  background-size: cover;
+  background-position: bottom;
+  overflow: hidden;
+}
+
+.banner .slides {
+  width: 300vw;
+  height: 100%;
+  display: flex
+}
+
+.banner .slide {
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.banner .slidearea {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.banner h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.banner h1 span{
+  color: #B28756;
+}
+
+.banner button {
+  display: block;
+  background-color: #B28756;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;font-weight: 600;  text-decoration: none;
+  padding: 10px 30px;
+  margin-top: 30px;
+  border-radius: 19px;
+}
+
+.banner .slide-points {
+  width: 100vw;
+  height: 20px;
+  position: absolute;
+  margin-top: -50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .point {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #B28756;
+  border-radius: 8px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.banner .point.active {
+  background-color: #B28756;
+}
