@@ -6,6 +6,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
 }
 
 header {
@@ -64,6 +65,19 @@ header {
   font-weight: 700;
 }
 
+.button {
+  display: inline-block;
+  background-color: #B28756;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin-top: 30px;
+  border-radius: 19px;
+}
+
 .banner {
   height: calc(100vh - 100px);
   background-color: #333;
@@ -104,17 +118,6 @@ header {
   color: #B28756;
 }
 
-.banner button {
-  display: block;
-  background-color: #B28756;
-  color: white;
-  text-transform: uppercase;
-  font-size: 12px;font-weight: 600;  text-decoration: none;
-  padding: 10px 30px;
-  margin-top: 30px;
-  border-radius: 19px;
-}
-
 .banner .slide-points {
   width: 100vw;
   height: 20px;
@@ -136,4 +139,109 @@ header {
 
 .banner .point.active {
   background-color: #B28756;
+}
+
+.section-default {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.section-default .section-title,
+.section-default .section-desc {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.section-default .section-title {
+  font-size: 20px;
+}
+
+.section-default .section-desc {
+  font-size: 12px;
+  color: #CCC;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.section-default .section-body {
+  max-width: 1140px;
+  margin:auto;
+}
+
+.section-default.light {
+  background-color: #f7f7f7;
+}
+
+.section-default.light .section-title,
+.section-default.light .section-body {
+  color: #000;
+}
+
+.section-default.dark {
+  background-color: #000;
+}
+
+.section-default.dark .section-title,
+.section-default.dark .section-body {
+  color: #fff;
+}
+
+
+/*
+CSS de áreas especificas
+*/
+.section-aboutus {
+  display: flex;
+}
+
+.section-aboutus--left {
+  flex: 1;
+}
+
+.section-aboutus--left p{
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.section-aboutus--right {
+  width: 500px;
+  text-align: center;
+}
+
+.section-aboutus--right img {
+  width: 480px;
+  box-shadow: 0px 5px 10px #333;
+}
+
+.section-services {
+  display: flex;
+}
+
+.section-service {
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid #333;
+  padding: 15px;
+}
+
+.section-service:first-child {
+  border-left: 1px solid #333;
+}
+
+.section-service img {
+  width: 60px;
+  height: 60px;
+}
+
+.section-service h4 {
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.section-service p {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #999;
 }
